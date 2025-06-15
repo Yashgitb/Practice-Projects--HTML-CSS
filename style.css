@@ -1,0 +1,266 @@
+/*............Universal Selector...................*/
+*{
+
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: sans-serif;
+
+}
+
+
+
+body{
+
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f8f8f8;
+
+}
+/*...........................................Header Section............*/
+header{
+
+    height: 60px;
+    width: 100%;
+    background-color: rgb(40, 33, 33);
+    color: #fff;
+    display: flex;
+
+}
+
+
+.container{
+
+   width: 90%;
+   margin: 0 auto;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding-bottom: 20px;
+
+}
+
+nav ul li{
+
+    list-style: none;
+    display: inline;
+    margin-right: 20px;
+    font-weight: 550;
+    
+}
+
+
+.logo{
+
+ font-size: 24px;
+ margin-top: 20px;
+ padding-top: 10px;
+}
+
+.menu-icon{
+    display:block;
+}
+
+.nav-list{
+ 
+    font-size: 18px;
+    margin-top: 20px;    
+    display: none;
+}
+
+
+
+/*........................Hero-Section...........*/
+
+.hero{
+
+    height: auto;
+    width: 100%;
+    background-image: url(images/heo-image.jpg);
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 140px 0;
+    align-items: center;
+    justify-content: center;
+   
+}
+ h1{
+
+    font-size: 45px;
+    margin-bottom: 20px;
+ }
+
+ .hero  p{
+
+    font-size: 20px;
+    margin-bottom: 10px;
+
+}  
+
+.search-button{
+ 
+   max-width: 550px;
+   margin: 15px auto;
+    display: flex;
+   align-items: center;
+   justify-content: center;
+
+   
+}
+
+.search-button input {
+    width:70%;   
+    padding: 10px;
+    border: 0;
+    outline: 0;
+    border-radius: 5px 0px 0px 5px;
+    font-size: 1rem;
+    border: 1px solid #fa4f47;
+    
+
+}
+
+
+.search-button  button{
+  
+  padding: 10px 20px;
+  color: #fff;
+  border: 0;
+  outline: none;
+  background: #fa4f47;
+  font-size: 1rem;
+  border-radius: 0px 5px 5px 0px; 
+  cursor: pointer;
+
+}
+
+
+/*.........................Recipe Section...........................*/
+.recipes{
+
+    padding: 50px 0;
+
+}
+
+
+.recipes h1{
+
+    
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+    
+}
+
+
+
+.recipe h2{
+
+    text-align: center;
+
+}
+
+.recipe-section{
+    
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(250px , 1fr));
+    column-gap: 10px;    
+
+
+}
+.recipe-card{
+  
+    background: #fff;
+    margin: 30px 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    box-shadow: 1px 2px 8px rgba(0, 0,0, 0.1);
+
+}
+
+.recipe-card img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+
+}
+
+.recipe-card h2{
+
+    font-size: 22px;
+    paddding: 20px;
+    text-align: center;
+
+}
+
+
+.recipe-card p{
+
+     font-size: 18px;
+     padding: 20px;
+}
+
+.recipe-card a{
+    
+    display: block;
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+/*..................Footer Section.....................*/
+footer{
+
+    background: #333;
+    padding: 20px 0;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+
+}
+
+.menu-icon{
+
+    font-size: 24px;
+    padding: 20px;
+    text-align: right;
+    cursor: pointer;
+    display: block;
+
+}
+
+
+@media only  screen and  (min-width: 768px){
+ .menu-icon{
+    display: none;
+ }
+.nav-list{
+
+    display: block;
+}
+
+}
+
+
+
+@media only  screen and  (max-width: 768px){
+
+.hero h2{
+    font-size: 28px;
+ }
+.hero p{
+
+    font-size: 15px;
+}
+
+}
+    
